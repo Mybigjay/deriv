@@ -4,13 +4,10 @@
   "description": "Websocket API for Deriv applications",
   "main": "dist/DerivAPI.js",
   "unpkg": "dist/DerivAPI.js",
-  "homepage": "https://mybigjay.github.io/deriv/",
   "files": [
     "dist/*.js"
   ],
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "test": "jest --verbose --forceExit",
     "build": "webpack --config webpack.config.js",
     "examples": "npm run build -- --display=none; for e in examples/*; do node $e; done",
@@ -40,6 +37,7 @@
   "bugs": {
     "url": "https://github.com/binary-com/deriv-api/issues"
   },
+  "homepage": "https://github.com/binary-com/deriv-api#readme",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/plugin-transform-runtime": "^7.6.0",

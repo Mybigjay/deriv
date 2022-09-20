@@ -2,6 +2,7 @@ const path    = require('path');
 const webpack = require('webpack');
 
 module.exports = [
+    
     {
         mode  : 'production',
         entry : './src/deriv_api/DerivAPIBasic.js',
@@ -12,6 +13,10 @@ module.exports = [
             libraryExport: 'default',
             libraryTarget: 'umd',
             path         : path.resolve(__dirname, 'dist'),
+        },
+        devServer: {
+            host: "ABC-XYZ", // Your Computer Name
+            port: 8080
         },
         module: {
             rules: [
